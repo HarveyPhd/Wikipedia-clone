@@ -5,7 +5,7 @@ html {
 }
 
 body {
-  overflow: hidden;
+  overflow-x: hidden;
   background-color: #FFF;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 1.4rem;
@@ -27,7 +27,15 @@ strong {
 }
 
 a {
+  unicode-bidi: embed;
+  outline: 0;
   color: #36c;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  outline: 0;
 }
 
 a:focus {
@@ -429,4 +437,274 @@ button {
   background-position: 0 -527px;
   width: 14px;
   height: 14px;
+}
+
+/* LANG LIST BORDER */
+
+.lang-list-border {
+  background-color: #c8ccd1;
+  display: block;
+  position: relative;
+  max-width: 460px;
+  width: 80%;
+  margin: -1.6rem auto 1.6rem;
+  height: 1px;
+}
+
+hr {
+  clear: both;
+  height: 0;
+  border: 0;
+  border-bottom: 1px solid #c8ccd1;
+  margin: 4.8rem 1.3rem 0.26rem;
+}
+
+/* FOOTER */
+
+.footer {
+  overflow: hidden;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 4.16rem 1.28rem 1.28rem;
+  font-size: 1.3rem;
+}
+
+.footer:before {
+  content: " ";
+  display: table;
+}
+
+.footer-sidebar {
+  width: 35%;
+  float: left;
+  clear: left;
+  margin-bottom: 3.2rem;
+  vertical-align: top;
+}
+
+.footer-sidebar-content {
+  position: relative;
+  max-width: 350px;
+  margin: 0 auto;
+}
+
+.sprite.footer-sidebar-icon {
+  position: absolute;
+  top: 0;
+  left: 0.8rem;
+}
+
+.svg-Wikimedia-logo-black {
+  background-position: 0 -212px;
+  width: 42px;
+  height: 42px;
+}
+
+.footer-sidebar-text {
+  display: block;
+  position: relative;
+  margin: 0;
+  padding-left: 6rem;
+  padding-right: 2rem;
+  color: #54595d
+}
+
+.app-badges .footer-sidebar-content {
+  background-color: #f8f9fa;
+}
+
+.app-badges .footer-sidebar-text {
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+}
+
+.app-badges .sprite.footer-sidebar-icon {
+  top: 0.8rem;
+}
+
+.svg-wikipedia_app_tile {
+  background-position: 0 -719px;
+  width: 42px;
+  height: 42px;
+}
+
+.app-badges ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.app-badge {
+  display: inline-block;
+}
+
+.app-badge a {
+  color: transparent;
+}
+
+.svg-badge_google_play_store {
+  background-position: 0 -541px;
+  width: 124px;
+  height: 38px;
+}
+
+.svg-badge_ios_app_store {
+  background-position: 0 -579px;
+  width: 110px;
+  height: 38px;
+}
+
+.other-projects {
+  display: inline-block;
+  width: 65%;
+}
+
+.other-project {
+  float: left;
+  position: relative;
+  width: 33%;
+  height: 9rem;
+}
+
+.other-project-link {
+  display: inline-block;
+  min-height: 50px;
+  width: 90%;
+  padding: 1em;
+  white-space: nowrap;
+}
+
+a.other-project-link {
+  text-decoration: none;
+}
+
+.other-project-link:hover {
+  background-color: #eaecf0;
+}
+
+.other-project-icon {
+  display: inline-block;
+  width: 50px;
+  text-align: center;
+}
+
+.other-project-text {
+  max-width: 65%;
+  font-size: 1.4rem;
+  vertical-align: middle;
+  white-space: normal;
+  display: inline-block;
+}
+
+.other-project-tagline, .other-project-title {
+  display: block;
+}
+
+.other-project-tagline {
+  color: #54595d;
+  font-size: 1.3rem;
+}
+
+
+.svg-Commons-logo_sister {
+  background-position: 0 0;
+  width: 47px;
+  height: 47px;
+}
+
+.svg-Wikivoyage-logo_sister {
+  background-position: 0 -446px;
+  width: 36px;
+  height: 36px;
+}
+
+.svg-Wiktionary-logo_sister {
+  background-position: 0 -482px;
+  width: 37px;
+  height: 37px;
+}
+
+.svg-Wikibooks-logo_sister {
+  background-position: 0 -126px;
+  width: 37px;
+  height: 37px;
+}
+
+.svg-Wikinews-logo_sister {
+  background-image: url('https://www.wikipedia.org/portal/wikipedia.org/assets/img/Wikinews-logo_sister.png');
+  background-position: 0 0;
+  width: 47px;
+  height: 26px;
+}
+
+.svg-Wikidata-logo_sister {
+  background-position: 0 -163px;
+  width: 49px;
+  height: 49px;
+}
+
+.svg-Wikiversity-logo_sister {
+  background-position: 0 -409px;
+  width: 43px;
+  height: 37px;
+}
+
+.svg-Wikiquote-logo_sister {
+  background-position: 0 -286px;
+  width: 42px;
+  height: 42px;
+}
+
+.svg-MediaWiki-logo_sister {
+  background-position: 0 -47px;
+  width: 42px;
+  height: 42px;
+}
+
+.svg-Wikisource-logo_sister {
+  background-position: 0 -328px;
+  width: 39px;
+  height: 39px;
+}
+
+.svg-Wikispecies-logo_sister {
+  background-position: 0 -367px;
+  width: 42px;
+  height: 42px;
+}
+
+.svg-Meta-Wiki-logo_sister {
+  background-position: 0 -89px;
+  width: 37px;
+  height: 37px;
+}
+
+.footer-line {
+  clear: both;
+  height: 0;
+  border: 0;
+  border-bottom: 1px solid #c8ccd1;
+  margin: 0.26rem 1.3rem;
+}
+
+.site-license {
+  color: #54595d;
+  text-align: center;
+}
+
+small {
+  font-size: 1.3rem;
+}
+
+.site-license small:after {
+  content: "\2022";
+  display: inline-block;
+  font-size: 1.3rem;
+  line-height: inherit;
+  margin-left: 0.8rem;
+  margin-right: 0.5rem;
+}
+
+.site-license small:last-child:after{
+  display: none;
 }
