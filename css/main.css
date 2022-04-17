@@ -36,6 +36,7 @@ a:focus {
 
 button {
   overflow: visible;
+  cursor: pointer;
 }
 
 /* CENTRAL TEXT */
@@ -380,4 +381,52 @@ button {
   background-position: 0 -697px;
   width: 22px;
   height: 22px;
+}
+
+.lang-list-button-wrapper {
+  text-align: center;
+}
+
+.lang-list-button {
+  background-color: #f8f9fa;
+  display: inline;
+  position: relative;
+  z-index: 1;
+  margin: 0 auto;
+  padding: 0.6rem 1.2rem;
+  outline: 1.6rem solid #fff;
+  border: 1px solid #a2a9b1;
+  border-radius: 2px;
+  color: #36c;
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 1;
+  transition: outline-width .1s ease-in .5s;
+}
+
+.lang-list-button:hover {
+  background-color: #fff;
+  border-color: #a2a9b1;
+}
+
+.lang-list-button i {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.svg-language-icon {
+  background-position: 0 -617px;
+  width: 22px;
+  height: 22px;
+}
+
+.lang-list-button-text {
+  padding: 0 0.64rem;
+  vertical-align: middle;
+}
+
+.svg-arrow-down-blue {
+  background-position: 0 -527px;
+  width: 14px;
+  height: 14px;
 }
